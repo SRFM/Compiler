@@ -1,0 +1,57 @@
+\*    --- Project creators --- *\
+\* 1. Name: Serafeim-Ilias Antoniou | A.M.: 2640 | username: cse42640 *\
+\* 2. Name: Sophia Pasoi            | A.M.: 2798 | username: cse42798 *\
+\* Execution Guidelines: *\
+\* In the phase_1 folder you will find the code, plus some programs for testing. *\
+\* The programs named "green_X.stl" are meant for the demonstration of our correct output messages. *\
+\* The programs named "red_X.stl" are meant for the demonstration of our correct error-messages output. *\
+
+\* Compilation Guidelines: *\
+\*    Line : printlex() MUST be in comments*\
+\*    EXECUTION CMD: python3 verbal_syntax_analysts.py source_1.stl or python3 verbal_syntax_analysts.py *\
+
+\* You have to correct or put the code's block that have error in comments because in every error the program exits*\
+
+program red1
+
+	\* variable declarations: *\
+	declare i,j,k,l,m,n;
+	
+	\* Subprograms: *\
+	function one(inout j)
+
+		\* variable declarations: *\
+		declare p,q;
+
+		\* assignment testing: *\
+		p:=j;
+		a:=3;
+
+		 \* while statement: *\
+		while(p<j)
+			q:=p;
+			
+			\*return testing*\
+			 \*error: missing  ')' , corresponding error message if   missing '(' or ' (,)'
+			return (q+1; 
+
+			p:=p+2
+
+		\*error : missing endwhile*\
+		
+	endfunction
+
+	\* test for input, print and function call *\
+	input id;
+	id:=j;
+
+	\* not found end of comment *\
+	\*a:=3; 
+
+	\*similar to return's errors messages *\
+	print(j);
+
+       \*error : missing inout*\
+       j:=one(j) 
+	
+endprogram

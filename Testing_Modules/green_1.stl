@@ -1,0 +1,61 @@
+/* COMPILATION GUIDELINES: */
+/*    EXECUTION CMD: python3 verbal_syntax_analysts.py source_1.stl or python3 verbal_syntax_analysts.py */
+
+program src1
+
+    /* variable declarations: */
+    declare v1, v2, v3, a, b, c, d;
+
+    /* Subprograms: */
+    function one (in v1, inout v2)
+
+        /* NO variables */
+
+        /* Subprograms: */
+        function two () endfunction
+
+        /* assignment testing: */
+        v1 := 1234;                 /* constant */
+        v2 := (a + b - c);           /* expression */
+            /* same */
+        v4 := v5;                      /* variable */
+
+        /* if statement: */
+        if (not [a < c and b < d]) then
+            exit
+        endif;
+
+        /* do-while statement: */
+        dowhile
+            v1 := v2 * 3
+        enddowhile (v1 > v2);
+
+        /* while statement: */
+        while (v1 <> v3)
+            v4 := 6
+        endwhile;
+
+        /* loop: */
+        loop
+            a := b
+        endloop;
+
+        /* for-case: */
+        
+
+        /* in-case module: */
+        incase
+            when (v2 >= v3) : c := d
+        endincase;
+
+        /* return statement: */
+        return (v1+v2*v3);
+
+        /* one-line comments testing module: */
+        //Hello,
+        //World!
+        
+
+    endfunction    
+
+endprogram
